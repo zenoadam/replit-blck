@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Patient Intake"
+description = "A lightweight patient intake form for capturing a patient's name, date of birth, and medical symptoms and submitting them to the local API for prototype storage."
+version = "1.0.0"
+id = "artifacts/patient-intake"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19923
+
+[services.development]
+run = "pnpm --filter @workspace/patient-intake run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/patient-intake", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/patient-intake/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19923"
+BASE_PATH = "/"

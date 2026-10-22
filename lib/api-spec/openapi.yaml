@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: patient-intake
+    description: Patient intake submissions
 paths:
   /healthz:
     get:
@@ -24,6 +26,31 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /patient-intakes:
+    post:
+      operationId: createPatientIntake
+      tags: [patient-intake]
+      summary: Save a patient intake submission
+      description: Saves a patient name, date of birth, and symptoms to the local prototype database.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PatientIntakeInput"
+      responses:
+        "201":
+          description: Intake submission saved
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PatientIntake"
+        "400":
+          description: Invalid intake submission
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +60,52 @@ components:
           type: string
       required:
         - status
+    PatientIntakeInput:
+      type: object
+      properties:
+        patientName:
+          type: string
+          minLength: 1
+          maxLength: 120
+        dateOfBirth:
+          type: string
+          pattern: '^\d{4}-\d{2}-\d{2}$'
+          description: Calendar date in YYYY-MM-DD format.
+        medicalSymptoms:
+          type: string
+          minLength: 1
+          maxLength: 4000
+      required:
+        - patientName
+        - dateOfBirth
+        - medicalSymptoms
+    PatientIntake:
+      type: object
+      properties:
+        id:
+          type: integer
+        patientName:
+          type: string
+        dateOfBirth:
+          type: string
+          pattern: '^\d{4}-\d{2}-\d{2}$'
+          description: Calendar date in YYYY-MM-DD format.
+        medicalSymptoms:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - patientName
+        - dateOfBirth
+        - medicalSymptoms
+        - createdAt
+    ApiError:
+      type: object
+      properties:
+        error:
+          type: string
+      required:
+        - error
 
