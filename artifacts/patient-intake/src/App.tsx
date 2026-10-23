@@ -19,9 +19,11 @@ import { Textarea } from '@/components/ui/textarea';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
+import Login from '@/pages/login';
 import {
   Route,
   Switch,
+  Link,
   useLocation,
   Router as WouterRouter,
 } from 'wouter';
@@ -75,6 +77,7 @@ function Home() {
           <span className="prototype-dot" />
           DEMO WORKSPACE
         </div>
+        <Link className="topbar-login" href="/login" data-testid="link-login">Care team sign in <ArrowRight size={14} /></Link>
       </header>
 
       <section className="intake-layout">
@@ -217,6 +220,7 @@ function Router() {
     <RoutedErrorBoundary>
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/login" component={Login} />
         <Route component={NotFound} />
       </Switch>
     </RoutedErrorBoundary>
