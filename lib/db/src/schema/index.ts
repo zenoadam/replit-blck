@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ * Copyright (c) 2026 Adam Zeineddine. All rights reserved.
  */
 // Export your models here. Add one export per file
 // export * from "./posts";

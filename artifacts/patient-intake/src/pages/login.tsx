@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ * Copyright (c) 2026 Adam Zeineddine. All rights reserved.
  */
 import { useState, type FormEvent } from 'react';
 import { ArrowLeft, ArrowRight, CircleAlert } from 'lucide-react';

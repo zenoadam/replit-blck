@@ -11,4 +11,4 @@ For local-only SQLite prototypes, Node's built-in `node:sqlite` can avoid a thir
 
 ---
 
-© 2026 Zeno Productions. All rights reserved.
+© 2026 Adam Zeineddine. All rights reserved.

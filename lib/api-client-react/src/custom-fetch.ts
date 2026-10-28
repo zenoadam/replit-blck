@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ * Copyright (c) 2026 Adam Zeineddine. All rights reserved.
  */
 export type CustomFetchOptions = RequestInit & {
   responseType?: "json" | "text" | "blob" | "auto";

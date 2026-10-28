@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ * Copyright (c) 2026 Adam Zeineddine. All rights reserved.
  */
 import * as AspectRatioPrimitive from '@radix-ui/react-aspect-ratio';
 

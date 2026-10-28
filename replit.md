@@ -46,4 +46,4 @@ _Populate as you build — sharp edges, "always run X before Y" rules._
 
 ---
 
-© 2026 Zeno Productions. All rights reserved.
+© 2026 Adam Zeineddine. All rights reserved.

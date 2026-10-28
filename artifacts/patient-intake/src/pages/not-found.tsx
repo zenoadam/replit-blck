@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ * Copyright (c) 2026 Adam Zeineddine. All rights reserved.
  */
 import { Card, CardContent } from '@/components/ui/card';
 import { AlertCircle } from 'lucide-react';
