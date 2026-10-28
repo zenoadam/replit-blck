@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 

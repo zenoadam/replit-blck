@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cn } from '@/lib/utils';

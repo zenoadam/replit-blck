@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import * as React from 'react';
 import * as CheckboxPrimitive from '@radix-ui/react-checkbox';
 import { cn } from '@/lib/utils';

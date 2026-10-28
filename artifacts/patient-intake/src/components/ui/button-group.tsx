@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import { Slot } from '@radix-ui/react-slot';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';

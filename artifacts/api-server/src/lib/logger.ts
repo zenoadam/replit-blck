@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import pino from "pino";
 
 const isProduction = process.env.NODE_ENV === "production";

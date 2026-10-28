@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import { Loader2Icon } from "lucide-react"
 
 import { cn } from "@/lib/utils"

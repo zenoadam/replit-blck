@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import { Router, type IRouter } from "express";
 import healthRouter from "./health";
 import patientIntakeRouter from "./patient-intake";

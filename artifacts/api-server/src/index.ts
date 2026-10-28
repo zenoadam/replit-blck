@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import app from "./app";
 import { logger } from "./lib/logger";
 

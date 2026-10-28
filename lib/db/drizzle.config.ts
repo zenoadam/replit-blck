@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import { defineConfig } from "drizzle-kit";
 import path from "path";
 

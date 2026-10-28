@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import { Router, type IRouter } from "express";
 import { CreatePatientIntakeBody, CreatePatientIntakeResponse } from "@workspace/api-zod";
 import { savePatientIntake } from "../lib/patient-intake-db";

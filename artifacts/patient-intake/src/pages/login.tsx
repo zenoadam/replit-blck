@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import { useState, type FormEvent } from 'react';
 import { ArrowLeft, ArrowRight, CircleAlert } from 'lucide-react';
 import { Link } from 'wouter';

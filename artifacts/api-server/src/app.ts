@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 import express, { type Express } from "express";
 import cors from "cors";
 import pinoHttp from "pino-http";

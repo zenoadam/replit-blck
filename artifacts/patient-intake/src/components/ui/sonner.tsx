@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2026 Zeno Productions. All rights reserved.
+ */
 'use client';
 
 import { useTheme } from 'next-themes';
